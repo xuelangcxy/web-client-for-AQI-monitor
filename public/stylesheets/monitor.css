@@ -1,0 +1,53 @@
+body,
+h1,
+div {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+    .toolbar {
+        position: relative;
+        border: 10px solid cornflowerblue;b
+    }
+    .toolbar h1 {
+        height: 20%;
+        text-align: center;
+        background-color: rgb(0, 129, 255);
+        padding-top: 2%;
+        padding-bottom: 2%;
+        color: white;
+    }
+    .container {
+        padding-bottom: 100%;
+        width:100%;
+        /*background: url(../images/background.gif);
+        background-position: top;
+        background-size: 100%;
+        background-repeat: no-repeat;*/
+    }
+    .pm2_5chart {
+        border: 2px;
+        border-color: blue;
+        border-style: dotted;
+    }
+    .pm2_5history {
+        border: 2px;
+        border-color: blue;
+        border-style: dotted;
+    }
+    .pm10chart {
+        margin-top: 5px;
+        border: 2px;
+        border-color: orange;
+        border-style: dotted;
+    }
+    .pm10history {
+        margin-top: 5px;
+        border: 2px;
+        border-color: orange;
+        border-style: dotted;
+    }

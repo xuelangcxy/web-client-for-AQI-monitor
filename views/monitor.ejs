@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.png">
+
+    <title>空气质量监测系统</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/monitor.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="toolbar">
+        <h1>欢迎使用空气质量监测系统</h1>
+    </div>
+
+    <div class="container">
+    <div class="row" style="width:100%;">
+    <div class="col-lg-4">
+      <h2>空气质量监测主界面:</h2>
+    </div>
+    <div class="col-lg-6" id="time" align="right">
+    <h3>时间：</h3>
+      </div>
+      <div class="col-lg-2" align="right" style="margin-top:20px;">
+        <input class="logout" id="logout" type="button" value="退出" style="align:right;width:80px">
+      </div>      
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4">
+        <div class="pm2_5chart">
+      <div align="center"><h3>pm 2.5 浓度示意图</h3></div>
+      <div id="pm2_5" style="height:300px;"></div>
+    </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="pm2_5history">
+      <div align="center"><h3>pm 2.5 历史浓度变化图</h3></div>
+      <div id="pm2_5historychart" style="height:300px;"></div>
+    </div>
+      </div>
+
+    </div>
+    
+    <div class="row">
+
+      <div class="col-lg-4">
+        <div class="pm10chart">
+      <div align="center"><h3>pm 10 浓度示意图</h3></div>
+      <div id="pm10" style="height:300px;"></div>
+    </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="pm10history">
+      <div align="center"><h3>pm 10 历史浓度变化图</h3></div>
+      <div id="pm10historychart" style="height:300px;"></div>
+    </div>
+      </div>
+
+    </div>
+    
+     
+    </div> <!-- /container -->
+
+    <script src="javascripts/socketio.js"></script>
+    <script src="javascripts/socket.io-stream.js"></script>
+    <script src="javascripts/blob-stream.js"></script>
+    <script src="javascripts/mimonodejsSDK.js"></script>
+    <script src="javascripts/echarts.js"></script>
+    <script type="text/javascript" src="javascripts/pm2_5.js"></script>
+    <script type="text/javascript" src="javascripts/pm2_5history.js"></script>
+    <script type="text/javascript" src="javascripts/pm10.js"></script>
+    <script type="text/javascript" src="javascripts/pm10history.js"></script>
+    <script type="text/javascript" src="javascripts/time.js"></script>
+    <script type="text/javascript" src="javascripts/logout.js"></script>
+
+  </body>
+</html>

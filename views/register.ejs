@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.png">
+
+    <title>用户注册</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/register.css" rel="stylesheet">
+
+   </head>
+
+  <body>
+
+    <div class="toolbar">
+        <h1>欢迎使用空气质量监测系统</h1>
+    </div>
+
+    <div class="container" align="center">
+          
+      <form class="form-signin" style="width:300px">
+        <h2 class="form-signin-heading"> 用户注册</h2>
+        <label for="inputUserName" class="sr-only">用户名</label>
+        <p>用户名：<input type="userName" id="userName" class="form-control" placeholder="用户名" required autofocus></p>
+        <label for="inputEmail" class="sr-only">邮箱地址</label>
+        <p>邮箱：<input type="email" id="email" class="form-control" placeholder="邮箱地址"></p>
+        <label for="inputPassword" class="sr-only">密码</label>
+        <p>密码：<input type="password" id="password" class="form-control" placeholder="密码" required></p>
+
+        <!-- <button class="btn btn-lg btn-primary btn-block" type="submit" id="submits">注册</button> -->
+        <input id="submits" type="button" value="提交注册信息" class="btn btn-lg btn-primary btn-block">
+        
+        <div align="right">
+        <input id="reset" type="button" value="重置" class="btn btn-primary" style="margin-top:3%;">
+    </div>
+
+      </form>
+
+    </div> <!-- /container -->
+
+    <script src="javascripts/socketio.js"></script>
+    <script src="javascripts/socket.io-stream.js"></script>
+    <script src="javascripts/blob-stream.js"></script>
+    <script src="javascripts/mimonodejsSDK.js"></script>
+    <script type="text/javascript" src="javascripts/register.js"></script>
+    <script type="text/javascript" src="javascripts/reset.js"></script>
+
+  </body>
+</html>
