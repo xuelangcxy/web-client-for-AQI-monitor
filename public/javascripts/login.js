@@ -11,7 +11,7 @@ document.getElementById('submits').addEventListener("click", function() {
             document.getElementById('newMessages').appendChild(cre);
         };
         this.successCallback = function(message) {
-            document.body.innerHTML = '<div class="toolbar"><h1>欢迎使用空气质量监测系统</h1></div>' + '<h1 style="color:red">恭喜您登录成功！</h1>' + '<h2>用户： ' + userData.userId + '</h2>' + '<p>3秒后自动跳转至主界面...</p>' + '或<a href="monitor">点击此处直接跳转</a>' + '<input id="subscribeOnTheme" type="button" style="width:200px;" value="subscribeOnTheme" class="btn btn-lg btn-primary btn-block">';
+            document.body.innerHTML = '<h1 style="color:red">恭喜您登录成功！</h1>' + '<h2>用户： ' + userData.userId + '</h2>' + '<p>3秒后自动跳转至主界面...</p>' + '或<a href="monitor">点击此处直接跳转</a>' + '<input id="subscribeOnTheme" type="button" style="width:200px;" value="subscribeOnTheme" class="btn btn-lg btn-primary btn-block">';
             /*setTimeout(function(){
                 window.location.href="monitor";
             }, 3000);*/

@@ -24,15 +24,18 @@ div {
     .container {
         padding-bottom: 100%;
         width:100%;
-        /*background: url(../images/background.gif);
+        /*background-color: rgb(11,111,111);*/
+        /*background: url(../images/background.jpg);
         background-position: top;
         background-size: 100%;
-        background-repeat: no-repeat;*/
+        background-repeat: no-repeat;
+        background-opacity: 0.5;*/
     }
     .pm2_5chart {
         border: 2px;
         border-color: blue;
         border-style: dotted;
+        /*background: url(../images/background.jpg);*/
     }
     .pm2_5history {
         border: 2px;
